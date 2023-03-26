@@ -1,0 +1,85 @@
+.carousel {
+  max-height: 100vh;
+
+  .arrow_left,
+  .arrow_right {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    opacity: 0.1;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .arrow_left {
+    left: 80px;
+    top: 48%;
+  }
+
+  .arrow_right {
+    right: 80px;
+    top: 48%;
+  }
+
+  .fa-chevron-right:hover,
+  .fa-chevron-left:hover {
+    background-color: #ffffffbd;
+    color: #63636396;
+    transition: 0.6s;
+    opacity: 1;
+  }
+
+  .img-carousel {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation: zoom 5s linear infinite;
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .arrow_left,
+    .arrow_right {
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .arrow_left {
+      left: 40px;
+    }
+
+    .arrow_right {
+      right: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .arrow_left,
+    .arrow_right {
+      font-size: 16px;
+      padding: 8px;
+    }
+
+    .arrow_left {
+      left: 20px;
+    }
+
+    .arrow_right {
+      right: 20px;
+    }
+  }
+}

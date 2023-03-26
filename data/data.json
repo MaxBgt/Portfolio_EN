@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Movie App",
+      "img": "img/react_movie_app.svg",
+      "desc": "Création d'une application de cinéma avec ReactJs. Incrémentation de filtres et d'une barre de recherche.",
+      "url": "https://movie-app-react-javascript.netlify.app/",
+      "techno": ["techno/react.png", "techno/js.png", "techno/Sass.png"]
+    },
+    {
+      "id": 2,
+      "title": "Country App",
+      "img": "img/country-app.svg",
+      "desc": "Manipulation d'API de pays. Mise en place de filtres par continent. Utilisation de React Router.",
+      "url": "https://countries-react-cours.netlify.app/",
+      "techno": ["techno/react.png", "techno/js.png", "techno/css.png"]
+    },
+    {
+      "id": 3,
+      "title": "Booki",
+      "img": "img/booki.jpg",
+      "desc": "Integration HTML/CSS d'un site d'agence de voyage.",
+      "url": "https://maxbgt.github.io/Booki/",
+      "techno": ["techno/HTML.png", "techno/css.png"]
+    },
+    {
+      "id": 4,
+      "title": "Portfolio Sophie Bluel",
+      "img": "img/portfolio-sopihe-bluel.jpg",
+      "desc": "Integration de plusieurs fonctionnalités en JS notamment un page de connexion. Manipulation des methodes POST, GET et DELETE.",
+      "url": "https://github.com/MaxBgt/Portfolio-architecte-sophie-bluel-master.io",
+      "techno": ["techno/js.png", "techno/HTML.png", "techno/css.png"]
+    },
+    {
+      "id": 5,
+      "title": "Gaming Campus",
+      "img": "img/gaming-campus.jpg",
+      "desc": "Integration HTML | CSS du site Gaming Campus.",
+      "url": "https://maxbgt.github.io/Gaming-campus-css-/",
+      "techno": ["techno/HTML.png", "techno/css.png"]
+    }
+  ]
+}

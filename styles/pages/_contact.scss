@@ -1,0 +1,150 @@
+.header_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title_contact {
+    color: #939393;
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-size: 2rem;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 70px;
+      left: 50%;
+      margin-top: 20px;
+      transform: translate(-50%);
+      width: 4px;
+      background: #e74c3c;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 488px;
+    background: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 0 13px -10px #000;
+
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+
+    .lab {
+      content: attr(type);
+      display: block;
+      margin: 28px 0 0;
+      font-size: 14px;
+      color: #5a5a5a;
+    }
+
+    input,
+    .message {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background: none;
+      outline: none;
+      resize: none;
+      border: 0;
+      font-family: "Montserrat", sans-serif;
+      transition: all 0.3s;
+      border-bottom: 2px solid #bebed2;
+    }
+
+    .submit {
+      float: right;
+      padding: 8px 12px;
+      margin: 8px 0 0;
+      font-family: "Montserrat", sans-serif;
+      border: 2px solid #78788c;
+      background: 0;
+      color: #5a5a6e;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        background: #78788c;
+        color: #fff;
+      }
+    }
+    .form-message {
+      margin-top: 35px;
+      p {
+        border-radius: 20px;
+        text-align: center;
+        padding: 5px 0;
+        color: #5a5a6e;
+      }
+      .sucess {
+        background: #bebed2;
+      }
+      .error {
+        background: rgb(246, 147, 147);
+      }
+    }
+  }
+  .contact-infos {
+    margin-bottom: 80px;
+    .infos_title {
+      margin-bottom: 0;
+
+      .icon {
+        color: #e74c3c;
+        margin-right: 10px;
+      }
+    }
+    .social {
+      color: #e74c3c;
+      margin-right: 10px;
+    }
+    .infos {
+      margin-top: 5px;
+      margin-bottom: 2px;
+      margin-left: 32px;
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+
+    .form-container {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .form-container {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .form-container {
+      width: 100%;
+      padding: 20px;
+    }
+    .contact-infos {
+      .infos {
+        margin-left: 20px;
+      }
+    }
+  }
+}

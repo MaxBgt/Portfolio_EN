@@ -1,0 +1,143 @@
+.about {
+  position: absolute;
+  top: 12%;
+  height: 100vh;
+  width: 100%;
+
+  .header_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+
+    .title_about {
+      color: #939393;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 70px;
+        left: 50%;
+        margin-top: 20px;
+        transform: translate(-50%);
+        width: 4px;
+        background: #e74c3c;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .paragraphe {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    color: #939393;
+
+    .t-left,
+    .t-right {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .t-left {
+      &::after {
+        content: "";
+        position: absolute;
+        height: 70px;
+        margin-top: 10px;
+        left: 20%;
+        width: 4px;
+        background: #e74c3c;
+        transform: rotate(90deg);
+      }
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .t-right {
+      &::after {
+        content: "";
+        position: absolute;
+        height: 70px;
+        margin-top: 10px;
+        right: 20%;
+        width: 4px;
+        background: #e74c3c;
+        transform: rotate(90deg);
+      }
+    }
+
+    .img-about {
+      width: 360px;
+      height: 335px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .p-left {
+      width: 20%;
+      text-align: justify;
+    }
+
+    .p-right {
+      width: 20%;
+      text-align: justify;
+    }
+  }
+
+  // Media Queries
+  @media (max-width: 1024px) {
+    .paragraphe {
+      .p-left,
+      .p-right {
+        width: 25%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header_about {
+      font-size: 1.2rem;
+    }
+
+    .paragraphe {
+      flex-direction: column;
+      align-items: center;
+
+      .t-left,
+      .t-right {
+        &::after {
+          display: none;
+        }
+      }
+
+      .p-left,
+      .p-right {
+        width: 70%;
+      }
+
+      .img-about {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header_about {
+      font-size: 1rem;
+    }
+
+    .paragraphe {
+      .p-left,
+      .p-right {
+        width: 90%;
+      }
+    }
+  }
+}

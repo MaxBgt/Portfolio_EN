@@ -1,0 +1,74 @@
+.header {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .name {
+      margin-bottom: 5px;
+      color: #e5e5e5;
+    }
+
+    .job-container {
+      .job {
+        margin: 0;
+        font-size: 5rem;
+        color: #f1f1f1ed;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 50%;
+          width: 1px;
+          background: #dadada;
+          right: -10px;
+          top: 45%;
+          transform: translate(-50%);
+          animation: cursor 1s infinite;
+        }
+
+        .highlight {
+          color: #7a0a00f0;
+        }
+
+        @keyframes cursor {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  // Media Queries
+  @media (max-width: 768px) {
+    .title {
+      .job-container {
+        .job {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 0.8rem;
+      .job-container {
+        .job {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
