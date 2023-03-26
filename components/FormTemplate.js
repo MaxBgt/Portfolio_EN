@@ -19,7 +19,7 @@ export const FormTemplate = () => {
         (result) => {
           console.log(result.text);
           form.current.reset();
-          formMessage.innerHTML = "<p class='sucess'>Message envoyé !</p>";
+          formMessage.innerHTML = "<p class='sucess'>Message sent !</p>";
 
           setTimeout(() => {
             formMessage.innerHTML = "";
@@ -28,7 +28,7 @@ export const FormTemplate = () => {
         (error) => {
           console.log(error.text);
           formMessage.innerHTML =
-            "<p class='error'>Le message ne s'est pas envoyé</p>";
+            "<p class='error'>The message was not sent.</p>";
 
           setTimeout(() => {
             formMessage.innerHTML = "";
@@ -40,13 +40,13 @@ export const FormTemplate = () => {
   return (
     <div className="form-container">
       <form ref={form} onSubmit={sendEmail} className="form">
-        <label className="lab">Nom</label>
+        <label className="lab">Name</label>
         <input type="text" name="nom" required autoComplete="off" />
         <label className="lab">Email</label>
         <input type="email" name="email" required autoComplete="off" />
         <label className="lab">Message</label>
         <textarea name="message" className="message" />
-        <input type="submit" value="Envoyer" className="submit" />
+        <input type="submit" value="Send" className="submit" />
       </form>
       <div className="form-message"></div>
     </div>

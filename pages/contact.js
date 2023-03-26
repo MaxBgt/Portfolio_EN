@@ -15,20 +15,20 @@ const contact = () => {
         exit={{ opacity: 0, x: 30 }}
         transition={{ type: "spring", stiffness: 100 }}
       >
-        <h2 className="title_contact">CONTACTEZ-MOI</h2>
+        <h2 className="title_contact">CONTACT ME</h2>
         <div className="contact_container">
           <FormTemplate />
           <div className="contact-infos">
             <h3 className="infos_title">
               <FontAwesomeIcon icon={faRoad} className="icon" />
-              ADRESSE
+              ADDRESS
             </h3>
             <p className="infos">6 impasse de la poste</p>
             <p className="infos">58000</p>
             <p className="infos">Challuy</p>
             <h3 className="infos_title">
               <FontAwesomeIcon icon={faPhone} className="icon" />
-              TÉLÉPHONE
+              PHONE
             </h3>
             <p className="infos">(+33) 6-11-14-44-51</p>
             <h3 className="infos_title">

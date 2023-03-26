@@ -4,12 +4,13 @@ const DynamicText = () => {
   useEffect(() => {
     const job = document.querySelector(".job");
     const text = [
-      "Développeur web",
-      "Concepteur de sites web",
-      "Web Mobile",
+      "Web developer",
       "Responsive Design",
+      "Website designer",
       "Front-end | Back-end",
+      "Web Mobile",
     ];
+
     let wordIndex = 0;
     let letterIndex = 0;
     let isDeleting = false;

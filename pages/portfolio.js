@@ -23,9 +23,9 @@ const portfolio = () => {
         transition={{ type: "spring", stiffness: 100 }}
       >
         <div className="header_portfolio">
-          <h2 className="title_portfolio">MES PROJETS</h2>
+          <h2 className="title_portfolio">MY PROJECTS</h2>
           <h3 className="subtitle_portfolio">
-            Voici les projets sur lesquels j'ai travaillé
+            These are the projects I've worked on
           </h3>
         </div>
         <div className="card_container">

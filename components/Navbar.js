@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link href="/portfolio">Portfolio</Link>
           </li>
           <li className={isActive("/about") ? "active" : ""}>
-            <Link href="/about">À propos</Link>
+            <Link href="/about">About</Link>
           </li>
           <li className={isActive("/contact") ? "active" : ""}>
             <Link href="/contact">Contact</Link>
