@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Movie App",
-      "img": "img/react_movie_app.svg",
+      "img": "img/react-movie.jpg",
       "desc": "Creation of a movie application using ReactJs. Implementation of filters and a search bar.",
       "url": "https://movie-app-react-javascript.netlify.app/",
       "techno": ["techno/react.png", "techno/js.png", "techno/Sass.png"]
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Country App",
-      "img": "img/country-app.svg",
+      "img": "img/country-app.jpg",
       "desc": "Manipulation of country APIs. Implementation of filters by continent. Using React Router.",
       "url": "https://countries-react-cours.netlify.app/",
       "techno": ["techno/react.png", "techno/js.png", "techno/css.png"]
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "title": "Portfolio Sophie Bluel",
-      "img": "img/portfolio-sopihe-bluel.jpg",
+      "img": "img/portfolio-sophie-bluel.jpg",
       "desc": "Integration of several features in JS, including a login page. Manipulation of POST, GET, and DELETE methods.",
       "url": "https://github.com/MaxBgt/Portfolio-architecte-sophie-bluel-master.io",
       "techno": ["techno/js.png", "techno/HTML.png", "techno/css.png"]
