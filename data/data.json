@@ -39,6 +39,14 @@
       "desc": "HTML | CSS integration of the Gaming Campus website.",
       "url": "https://maxbgt.github.io/Gaming-campus-css-/",
       "techno": ["techno/HTML.png", "techno/css.png"]
+    },
+    {
+      "id": 6,
+      "title": "Kasa",
+      "img": "img/kasa.jpg",
+      "desc": "Developing an application from scratch with ReactJs. Creating multiple pages and a description for each accommodation",
+      "url": "https://kasa-logements.netlify.app/",
+      "techno": ["techno/react.png", "techno/Sass.png", "techno/js.png"]
     }
   ]
 }
