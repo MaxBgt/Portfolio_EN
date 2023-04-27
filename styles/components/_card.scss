@@ -1,28 +1,55 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .navbar {
   background: rgb(229 203 159 / 55%);
   margin-top: 0;
 }
 
 .card_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10px;
+  width: 50%;
+  margin: 80px auto;
+
+  .slide {
+    transform: scale(0.3);
+    transition: transform 300ms;
+    opacity: 0.5;
+    margin-top: 50px;
+  }
+
+  .activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  .arrow {
+    color: #e74c3cd4;
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+    width: 20px;
+    z-index: 10;
+  }
+
+  .next {
+    right: 0%;
+    top: 50%;
+  }
+
+  .prev {
+    left: 0%;
+    top: 50%;
+  }
 
   .card {
-    width: calc(25% - 177px);
     border: 1px solid #dedede;
     border-radius: 10px;
     box-shadow: 3px 5px 5px rgba(54, 50, 50, 0.38);
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    margin: 10px 40px;
+    margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   .techno-container {
@@ -56,6 +83,7 @@
     border-radius: 10px 10px 0 0;
     color: #fff;
     margin: 0;
+    font-size: 20px;
     padding: 4px;
   }
 
@@ -67,30 +95,55 @@
     margin-right: 5px;
     padding: 2px;
   }
+}
 
-  @media (max-width: 1200px) {
-    .card {
-      width: calc(33.33% - 120px);
-    }
+@media (max-width: 1200px) {
+  .card_container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .card_container {
+    width: 90%;
   }
 
-  @media (max-width: 992px) {
-    .card {
-      width: calc(50% - 80px);
-    }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card_container {
+    width: 100%;
   }
 
-  @media (max-width: 768px) {
-    .card {
-      width: calc(50% - 40px);
-      margin: 10px 20px;
-    }
+  .card {
+    width: 100%;
+    margin: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_container {
+    width: 100%;
   }
 
-  @media (max-width: 480px) {
-    .card {
-      width: calc(100% - 40px);
-      margin: 10px 20px;
+  .card {
+    width: 100%;
+    margin-left: 0;
+
+    .card_title {
+      font-size: 13px;
     }
+    .description {
+      font-size: 10px;
+    }
+  }
+  .prev {
+    margin-left: 20px;
+  }
+  .next {
+    margin-right: 20px;
   }
 }
