@@ -6,9 +6,8 @@ const DynamicText = () => {
     const text = [
       "Web developer",
       "Responsive Design",
-      "Website designer",
-      "Front-end | Back-end",
       "Web Mobile",
+      "Front-end",
     ];
 
     let wordIndex = 0;

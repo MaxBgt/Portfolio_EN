@@ -11,14 +11,14 @@
 
     .name {
       margin-bottom: 5px;
-      color: #e5e5e5;
+      color: #ffffff;
     }
 
     .job-container {
       .job {
         margin: 0;
         font-size: 5rem;
-        color: #f1f1f1ed;
+        color: #6e0000;
         &::after {
           content: "";
           position: absolute;
@@ -62,11 +62,24 @@
   }
 
   @media (max-width: 480px) {
+    .name {
+      font-size: 15px;
+    }
     .title {
       font-size: 0.8rem;
       .job-container {
         .job {
-          font-size: 1.3rem;
+          font-size: 1.4rem;
+          &::after {
+            content: "";
+            position: relative;
+            height: 35%;
+            width: 1px;
+            background: #dadada;
+            right: -10px;
+            top: 60%;
+            animation: cursor 1s infinite;
+          }
         }
       }
     }
