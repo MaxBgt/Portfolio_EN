@@ -33,11 +33,29 @@
     opacity: 1;
   }
 
-  .img-carousel {
+  .img-container {
+    position: relative;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
-    animation: zoom 5s linear infinite;
+
+    .img-carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: zoom 5s linear infinite;
+      z-index: 1;
+    }
+
+    .img-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.35);
+      z-index: 2; /* Changed from 0 to 2 */
+    }
     @keyframes zoom {
       0% {
         transform: scale(1);

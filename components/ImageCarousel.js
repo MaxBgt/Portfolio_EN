@@ -60,21 +60,24 @@ const ImageCarousel = () => {
       prevLabel="Previous"
       nextLabel="Next"
     >
-      <div>
+      <div className="img-container">
+        <div className="img-overlay"></div>
         <img
           src="/img/background-1.jpg"
           alt="Image1"
           className={zoomClass[0]}
         />
       </div>
-      <div>
+      <div className="img-container">
+        <div className="img-overlay"></div>
         <img
           src="/img/background-2.jpg"
           alt="Image2"
           className={zoomClass[1]}
         />
       </div>
-      <div>
+      <div className="img-container">
+        <div className="img-overlay"></div>
         <img
           src="/img/background-3.jpg"
           alt="Image3"

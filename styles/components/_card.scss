@@ -7,7 +7,7 @@
 }
 
 .card_container {
-  width: 50%;
+  width: 70%;
   margin: 80px auto;
 
   .slide {
@@ -43,12 +43,12 @@
 
   .card {
     border: 1px solid #dedede;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 3px 5px 5px rgba(54, 50, 50, 0.38);
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -62,8 +62,8 @@
     }
 
     .techno {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
     }
   }
 
@@ -74,17 +74,31 @@
   .card_img {
     object-fit: cover;
     width: 100%;
+    max-height: 479px;
     border-bottom: 1px solid #dedede;
   }
 
-  .card_title {
+  .top-container {
+    display: flex;
     background-color: #e74c3cd4;
-    text-align: center;
-    border-radius: 10px 10px 0 0;
-    color: #fff;
-    margin: 0;
-    font-size: 20px;
-    padding: 4px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    .card_title {
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+      color: #fff;
+      margin: 0;
+      font-size: 25px;
+      padding: 4px;
+    }
+    .link-icon {
+      position: absolute;
+      right: 20px;
+      font-size: 20px;
+      color: #dedede;
+    }
   }
 
   .description {

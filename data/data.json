@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Movie App",
-      "img": "img/react-movie.jpg",
+      "img": "img/react-movie.png",
       "desc": "Creation of a movie application using ReactJs. Implementation of filters and a search bar.",
       "url": "https://movie-app-react-javascript.netlify.app/",
       "techno": ["techno/react.png", "techno/js.png", "techno/Sass.png"]
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Country App",
-      "img": "img/country-app.jpg",
+      "img": "img/country-app.png",
       "desc": "Manipulation of country APIs. Implementation of filters by continent. Using React Router.",
       "url": "https://countries-react-cours.netlify.app/",
       "techno": ["techno/react.png", "techno/js.png", "techno/css.png"]
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "title": "Booki",
-      "img": "img/booki.jpg",
+      "img": "img/booki.png",
       "desc": "HTML/CSS integration of a travel agency website.",
       "url": "https://maxbgt.github.io/Booki/",
       "techno": ["techno/HTML.png", "techno/css.png"]
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "title": "Portfolio Sophie Bluel",
-      "img": "img/portfolio-sophie-bluel.jpg",
+      "img": "img/portfolio-sophie-bluel.png",
       "desc": "Integration of several features in JS, including a login page. Manipulation of POST, GET, and DELETE methods.",
       "url": "https://github.com/MaxBgt/Portfolio-architecte-sophie-bluel-master.io",
       "techno": ["techno/js.png", "techno/HTML.png", "techno/css.png"]
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "title": "Gaming Campus",
-      "img": "img/gaming-campus.jpg",
+      "img": "img/gaming-campus.png",
       "desc": "HTML | CSS integration of the Gaming Campus website.",
       "url": "https://maxbgt.github.io/Gaming-campus-css-/",
       "techno": ["techno/HTML.png", "techno/css.png"]
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "title": "Kasa",
-      "img": "img/kasa.jpg",
+      "img": "img/kasa.png",
       "desc": "Developing an application from scratch with ReactJs. Creating multiple pages and a description for each accommodation",
       "url": "https://kasa-logements.netlify.app/",
       "techno": ["techno/react.png", "techno/Sass.png", "techno/js.png"]
