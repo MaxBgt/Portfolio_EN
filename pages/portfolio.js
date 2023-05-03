@@ -51,6 +51,7 @@ const portfolio = () => {
         </div>
         <div className="card_container">
           <Slider
+            className="slider"
             infinite={true}
             lazyLoad={true}
             speed={300}

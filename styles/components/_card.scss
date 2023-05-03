@@ -142,22 +142,35 @@
   .card_container {
     width: 100%;
   }
-
   .card {
     width: 100%;
     margin-left: 0;
-
-    .card_title {
-      font-size: 13px;
+    height: 28vh;
+    .top-container {
+      .card_title {
+        font-size: 15px;
+      }
+      .link-icon {
+        visibility: hidden;
+      }
+    }
+    .card_img {
+      height: 70px;
     }
     .description {
-      font-size: 10px;
+      font-size: 8px;
+    }
+    .techno-container {
+      .techno {
+        width: 12px;
+        height: 12px;
+      }
     }
   }
   .prev {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .next {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
